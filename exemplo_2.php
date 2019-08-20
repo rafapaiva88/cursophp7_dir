@@ -5,7 +5,7 @@ $imagens = scandir("imagens"); //scaneia o diretorio e retorna um array com cada
 $data = array();
 
 foreach ($imagens as $img) { // adiciona a variavel $img para cada intem do array $imagens
-	if(!in_array($img, array(".", ".."))){ // se dentro do array NAO(!) for . ou .. execute
+	if(!in_array($img, array(".", ".."))){ // NAO(!)pode conter dentro desse array . ou .. execute
 
 		$filename = "imagens" . DIRECTORY_SEPARATOR . $img;
 
